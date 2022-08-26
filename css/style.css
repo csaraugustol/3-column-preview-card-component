@@ -1,0 +1,116 @@
+:root {
+    --bright-orange: hsl(31, 77%, 52%);
+    --dark-cyan: hsl(184, 100%, 22%);
+    --very-dark-cyan: hsl(179, 100%, 13%);
+    --very-light-gray: hsl(0, 0%, 95%);
+    --transparent-white: hsla(0, 0%, 100%, 0.75);
+
+    --big-shoulders-display: 'Big Shoulders Display', cursive;
+    --lexend-deca: 'Lexend Deca', sans-serif;
+}
+
+* {
+    margin: 0 auto;
+}
+
+.container {
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 25px;
+    margin-top: 25px;
+    width: 90vw;
+}
+
+.card_one,
+.card_two,
+.card_three {
+    color: var(--very-light-gray);
+    height: 400px;
+}
+
+.card_one {
+    background-color: var(--bright-orange);
+}
+
+.card_two {
+    background-color: var(--dark-cyan);
+}
+
+.card_three {
+    background-color: var(--very-dark-cyan);
+}
+
+.card__content {
+    padding: 25px;
+}
+
+.title,
+.paragraph,
+.button {
+    margin-top: 30px;
+}
+
+.paragraph,
+.button {
+    font-family: var(--lexend-deca);
+    font-weight: 400;
+}
+
+.title {
+    font-family: var(--big-shoulders-display);
+    font-size: 50px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.button {
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    height: 50px;
+    margin-top: 50px;
+    width: 150px;
+}
+
+.button:hover {
+    background: transparent;
+    border: 1px solid var(--transparent-white);
+    color: var(--very-light-gray);
+}
+
+.button_sedans {
+    color: var(--bright-orange);
+}
+
+.button_suvs {
+    color: var(--dark-cyan);
+}
+
+
+.button_luxury {
+    color: var(--very-dark-cyan);
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        height: 90vh;
+        justify-content: center;
+        width: 700px;
+    }
+
+    .card__content {
+        margin-left: 25px;
+        margin-right: 25px;
+        padding: 0px;
+    }
+
+    .image,
+    .title,
+    .paragraph,
+    .button {
+        margin: 15px;
+    }
+}
